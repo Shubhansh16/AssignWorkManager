@@ -18,7 +18,7 @@ class NewsWorker(appContext: Context, params: WorkerParameters) : CoroutineWorke
         private const val TAG ="NewsWorker"
     }
 
-    private val apiKey = "35f43e2f984142a59f671d92adfceb24" // Replace with your NewsAPI key
+    private val apiKey = "YOUR_API_KEY" // Replace with your NewsAPI key
 
     override suspend fun doWork(): Result {
         Log.d(TAG, "Worker started at ${System.currentTimeMillis()}")
